@@ -7,7 +7,16 @@ This is a simple command-line interface (CLI) application for managing your dail
 -   Add new todo items.
 -   List all existing todo items.
 -   Mark todo items as complete.
--   Delete todo items. (Inferred based on common todo app features)
+-   Delete todo items.
+-   Search tasks by keyword.
+-   Filter tasks by status, priority, or tags.
+-   Sort tasks by various criteria (e.g., due date, priority).
+
+## Intermediate & Advanced Features
+
+-   **Persistence:** All tasks are automatically saved to `tasks.json` and loaded on startup, ensuring your todo list is preserved across application sessions.
+-   **Task Recurrence:** Define tasks that repeat daily, weekly, monthly, or yearly with specified start and end dates. The application automatically generates new instances of these tasks as their recurrence dates pass.
+-   **Reminders:** Set specific date and time reminders for your tasks, and the application will notify you when a reminder is due.
 
 ## Project Structure
 

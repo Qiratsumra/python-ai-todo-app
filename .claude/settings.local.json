@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "SlashCommand(/sp.specify:*)",
+      "SlashCommand(/sp.analyze)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
