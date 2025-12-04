@@ -1,0 +1,64 @@
+# Todo Console Application
+
+This is a simple command-line interface (CLI) application for managing your daily todo tasks.
+
+## Features
+
+-   Add new todo items.
+-   List all existing todo items.
+-   Mark todo items as complete.
+-   Delete todo items. (Inferred based on common todo app features)
+
+## Project Structure
+
+-   `main.py`: The entry point of the application, handling command-line argument parsing and invoking the UI logic.
+-   `service.py`: Contains the core business logic for managing todo items (e.g., adding, retrieving, updating, deleting).
+-   `models.py`: Defines the data structures for todo items.
+-   `ui.py`: Handles the user interface aspects, such as displaying todo lists and taking user input.
+-   `pyproject.toml`: Project configuration and dependencies managed by `uv` (or Poetry/PDM).
+-   `uv.lock`: Lock file for dependencies, ensuring reproducible builds.
+
+## Setup and Installation
+
+To set up and run this application, follow these steps:
+
+1.  **Ensure you have Python 3.x and `uv` installed.** If not, you can install `uv` via `pip`:
+    ```bash
+    pip install uv
+    ```
+    Alternatively, you can install Python from [python.org](https://www.python.org/) and `uv` from its official documentation.
+
+2.  **Install dependencies:**
+    Navigate to this `todo-app` directory and install the project dependencies using `uv`:
+    ```bash
+    uv sync
+    ```
+
+3.  **Activate the virtual environment (optional but recommended):**
+    ```bash
+    # uv automatically manages environments, but if you need to activate:
+    source .venv/bin/activate # On Linux/macOS
+    .venv\Scripts\activate # On Windows
+    ```
+
+## Usage
+
+Once the setup is complete, you can run the todo application from this directory:
+
+```bash
+python main.py
+```
+
+The application will then present you with options to manage your todo list.
+
+Example commands (actual commands may vary based on implementation in `main.py`):
+```bash
+python main.py add "Buy groceries"
+python main.py list
+python main.py complete 1
+python main.py delete 2
+```
+Please refer to the application's help message (if available) for exact command usage:
+```bash
+python main.py --help
+```
