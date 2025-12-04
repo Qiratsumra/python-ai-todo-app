@@ -33,7 +33,7 @@ To set up and run this application, follow these steps:
 
 1.  **Clone the repository (if you haven't already):**
     ```bash
-    git clone https://github.com/qiratsumra/todo-hackathon-phase-02.git
+    git clone https://github.com/Qiratsumra/python-ai-todo-app
     cd todo-hackathon-phase-02/todo-console-app
     ```
 
